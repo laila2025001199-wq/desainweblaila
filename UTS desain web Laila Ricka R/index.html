@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>Royal Dashboard</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="menu-item active" data-menu="home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#" class="menu-item" data-menu="mahasiswa"><i class="fa-solid fa-user-graduate"></i> Mahasiswa</a></li>
+                <li><a href="#" class="menu-item" data-menu="kelas"><i class="fa-solid fa-book-open"></i> Kelas</a></li>
+                <li><a href="#" class="menu-item" data-menu="aktifitas"><i class="fa-solid fa-chart-line"></i> Aktifitas</a></li>
+                <li><a href="#" class="menu-item" data-menu="statistik"><i class="fa-solid fa-chart-pie"></i> Statistik</a></li>
+                <li><a href="#" class="menu-item" data-menu="dokumen"><i class="fa-solid fa-folder-open"></i> Dokumen</a></li>
+                <li><a href="#" class="menu-item" data-menu="settings"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li class="logout"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cari Kelas, Dokumen, Aktifitas di...">
+                </div>
+            </header>
+
+           
+            <div class="dashboard-body">
+                
+                
+                <section class="welcome-card">
+                    <div class="welcome-text">
+                        <h1 id="welcome-title">Selamat Datang, Mahasiswa</h1>
+                        <h3 id="welcome-class">Kelas SI-3X</h3>
+                        <p>Kamu memiliki statistik, 4 Progres Kelas, Aktivitas & Lampiran Dokumen yang ada pada aplikasi ini.</p>
+                    </div>
+                    <div class="welcome-profile">
+                         
+                            
+                        <img src="foto laila.jpeg" alt="Foto Profil" class="profile-img">
+                    </div>
+                </section>
+
+            
+                <div class="grid-row">
+                    
+                    
+                    <div class="card statistic-card">
+                        <h2>Statistik Mahasiswa</h2>
+                        <div class="chart-container">
+                            
+                            <img src="Chart_Statistik.svg" alt="Diagram" style="width:100%; height:100%; object-fit:contain;">
+                    </div>
+
+                    
+                    <div class="card progress-card">
+                        <h2>Progres Kelas</h2>
+                        <div class="progress-grid">
+                            <div class="progress-item">
+                                <h4>Matakuliah A</h4>
+                                <p>75 Pendaftar</p>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Matakuliah B</h4>
+                                <p>50 Pendaftar</p>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Matakuliah C</h4>
+                                <p>60 Pendaftar</p>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Matakuliah D</h4>
+                                <p>40 Pendaftar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="grid-row">
+                    
+                   
+                    <div class="card activity-card">
+                        <h2>Aktivitas Selanjutnya</h2>
+                        <ul class="activity-list">
+                            <li>
+                                <div>
+                                    <strong>Perkuliahan Daring 1</strong>
+                                    <p>Selasa, 14 Januari 2025</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Perkuliahan Daring 2</strong>
+                                    <p>Kamis, 16 Januari 2025</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Perkuliahan Daring 3</strong>
+                                    <p>Selasa, 11 Februari 2025</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Perkuliahan Daring 4</strong>
+                                    <p>Rabu, 15 Maret 2025</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="card document-card">
+                        <h2>Lampiran Dokumen</h2>
+                        <ul class="document-list">
+                            <li>
+                                <span>Lampiran Dokumen 1 : Matakuliah A, Tugas Bersama</span>
+                                <button class="btn-lihat">Lihat Dokumen</button>
+                            </li>
+                            <li>
+                                <span>Lampiran Dokumen 2 : Matakuliah B, Tugas Bersama</span>
+                                <button class="btn-lihat">Lihat Dokumen</button>
+                            </li>
+                            <li>
+                                <span>Lampiran Dokumen 3 : Matakuliah C, Tugas Bersama</span>
+                                <button class="btn-lihat">Lihat Dokumen</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    
+    <script src="scrip.js"></script>
+</body>
+</html>
